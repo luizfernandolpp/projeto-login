@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) and (orientation: portrait){
+
+:root{
+    --bg-color: #5f2c82;
+    --input-color: #49a09d;
+}   
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+}
