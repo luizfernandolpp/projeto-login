@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/mobile.css">
     <link rel="stylesheet" href="estilos/media-query.css">
@@ -22,8 +21,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="index.php" method="post">
+                <form action="index.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined" id="person">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required max-length="30">
+                        <label for="ilogin">Login</label>
+                    </div>
                     
+                    <div class="campo">
+                        <span class="material-symbols-outlined" id="key">vpn_key</span>
+                        <input type="password" name="pass" id="ipass" placeholder="Sua senha" autocomplete="current-password" required min-lenght="8" max-length="16">
+                        <label for="ipass">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar"> <br>
+                    <button>Esqueci minha senha <span class='material-symbols-outlined'>mail</span></button>
                 </form>
 
             </div>
@@ -32,9 +43,6 @@
 </body>
 </html>
 
-<!--<span class="material-symbols-outlined" id="person">person<input type="email" name="email" id="iemail"></span>
-                    <span class="material-symbols-outlined" id="key">key<input type="password" name="pass" id="ipass"><br></span>
-                    <button type="submit" id="buttonSubmit">Entrar</button><br>
-                    <button id="buttonForgetPass">Esqueci a senha <span class="material-symbols-outlined">
-                        mail
-                        </span></button> -->
+
+                    
+                    
